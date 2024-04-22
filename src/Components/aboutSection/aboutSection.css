@@ -1,0 +1,106 @@
+p {
+  text-align: center;
+}
+
+.section-gap {
+  margin-bottom: 50px;
+}
+
+.hero-img {
+  position: relative;
+  height: 80vh;
+  background-image: url("../../assests/team.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.team-member .role {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.fa {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #000;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.team-member:hover .fa {
+  transform: scale(1.2);
+  color: #007aff;
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}

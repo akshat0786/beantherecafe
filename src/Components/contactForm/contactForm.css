@@ -1,0 +1,86 @@
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  /* margin: auto 10px;*/
+  /* padding: 20px; */
+  background-color: #f7f7f7;
+  margin-bottom: 50px;
+  margin: 10px;
+}
+
+.contactForm {
+  width: 50%;
+  margin: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px; /* Set a fixed height for the textarea */
+}
+
+button[type="submit"] {
+  background-color: #505050;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #8a1717;
+}
+
+.shop-address {
+  margin-top: 30px;
+}
+
+.google-maps {
+  /* margin-top: 20px; */
+  border: 0px;
+}
+
+/* Adjust styles for mobile screens */
+@media (max-width: 600px) {
+  .contact-form-container {
+    /* padding: 10px; */
+    flex-direction: column;
+  }
+
+  .contactForm {
+    width: 80%;
+    padding: 10px;
+    /* margin: 20px; */
+  }
+
+  .googleMap {
+    width: 480px;
+    height: 500px;
+    padding: 10px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
